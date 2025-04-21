@@ -1,0 +1,56 @@
+@model ProyectoNotas.Models.Estudiante
+
+@{
+    ViewData["Title"] = "Información General";
+}
+
+<div style="display: flex; padding: 20px; gap: 5%;">
+    <!-- Panel izquierdo: Información del usuario -->
+    <div style="flex: 0 0 25%; border-right: 1px solid #ccc; padding-right: 20px;">
+        <h3>Perfil del Estudiante</h3>
+        <p><strong>Usuario:</strong> @Model.Usuario</p>
+        <p><strong>Promedio Acumulado:</strong> @Model.PromedioAcumulado</p>
+
+        <form asp-action="EditarPerfil" asp-controller="EstudiantesWeb" method="get">
+            <button type="submit">Modificar Perfil</button>
+        </form>
+    </div>
+
+    <!-- Panel derecho: Materias inscritas -->
+    <div style="flex: 0 0 60%;">
+        <h3>Materias Inscritas</h3>
+
+        @if (Model.Inscripciones != null && Model.Inscripciones.Any())
+        {
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <th style="text-align: left; padding: 8px;">Materia</th>
+                        <th style="text-align: left; padding: 8px;">Profesor</th>
+                        <th style="text-align: left; padding: 8px;">Notas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var inscripcion in Model.Inscripciones)
+                    {
+                        <tr>
+                            <td style="padding: 8px;">@inscripcion.Materia?.Nombre</td>
+                            <td style="padding: 8px;">@inscripcion.Materia?.Profesor</td>
+                            <td style="padding: 8px;">
+                                @string.Join(", ", inscripcion.Notas ?? new List<float>())
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No tienes materias inscritas actualmente.</p>
+        }
+
+        <form asp-action="ListarMaterias" asp-controller="InscripcionesWeb" method="get" style="margin-top: 20px;">
+            <button type="submit">Busca tu clase</button>
+        </form>
+    </div>
+</div>

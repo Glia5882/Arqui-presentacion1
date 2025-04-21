@@ -1,0 +1,39 @@
+@model ProyectoNotas.Models.Estudiante
+
+@{
+    ViewData["Title"] = "Modificar Perfil";
+}
+
+<h2>Modificar Perfil</h2>
+
+<form asp-action="EditarPerfil" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label asp-for="Usuario"></label>
+        <input asp-for="Usuario" />
+        <span asp-validation-for="Usuario"></span>
+    </div>
+
+    <div>
+        <label asp-for="Contrasena"></label>
+        <input asp-for="Contrasena" type="password" />
+        <span asp-validation-for="Contrasena"></span>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button type="submit">Guardar Cambios</button>
+    </div>
+</form>
+
+<form asp-action="EliminarCuenta" method="post" style="margin-top: 10px;">
+    <button type="submit" style="background-color: red; color: white;">Eliminar Cuenta</button>
+</form>
+
+<form asp-action="Index" method="get" style="margin-top: 10px;">
+    <button type="submit">Volver</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -7,6 +7,6 @@ namespace ProyectoNotas.Models
         public string Profesor { get; set; }
         public float PromedioMateria { get; set; }
 
-        public ICollection<Inscripcion> Inscripciones { get; set; }
+        public List<Inscripcion> Inscripciones { get; set; } = new ();
     }
 }

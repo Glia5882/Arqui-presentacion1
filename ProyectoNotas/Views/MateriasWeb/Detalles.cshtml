@@ -1,0 +1,48 @@
+@model ProyectoNotas.Models.Materia
+
+@{
+    ViewData["Title"] = "Usuarios Inscritos en la materia";
+}
+
+<h2>@Model.Nombre - @Model.Profesor</h2>
+
+<h3>@ViewData["Title"]</h3>
+
+@if (Model.Inscripciones != null && Model.Inscripciones.Any())
+{
+    <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr style="border-bottom: 1px solid #ccc;">
+                <th style="text-align: left; padding: 8px;">Usuario</th>
+                <th style="text-align: left; padding: 8px;">Notas</th>
+                <th style="text-align: left; padding: 8px;">Agregar Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var inscripcion in Model.Inscripciones)
+            {
+                <tr>
+                    <td style="padding: 8px;">@inscripcion.Estudiante?.Usuario</td>
+                    <td style="padding: 8px;">
+                        @string.Join(", ", inscripcion.Notas ?? new List<float>())
+                    </td>
+                    <td style="padding: 8px;">
+                        <form asp-action="AgregarNota" asp-controller="InscripcionesWeb" method="post">
+                            <input type="hidden" name="inscripcionId" value="@inscripcion.Id" />
+                            <input type="text" name="nota" pattern="^\d+([.,]\d+)?$" title="Número entre 0 y 5 con punto o coma decimal" required />
+                            <button type="submit">Agregar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay estudiantes inscritos en esta materia.</p>
+}
+
+<form asp-action="Index" method="get" style="margin-top: 20px;">
+    <button type="submit">Volver</button>
+</form>

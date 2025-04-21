@@ -45,5 +45,13 @@ namespace ProyectoNotas.DAO
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<Materia?> BuscarConInscripcionesYEstudiantes(int id) {
+            return await _context.Materias
+                .Include(m => m.Inscripciones)
+                    .ThenInclude(i => i.Estudiante)
+                .FirstOrDefaultAsync(m => m.Id == id);
+        }
+
     }
 }

@@ -17,11 +17,55 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoNotas
 build_property.RootNamespace = ProyectoNotas
-build_property.ProjectDir = C:\Users\Personal\Documents\GitHub\Arqui-presentacion1\ProyectoNotas\
+build_property.ProjectDir = C:\Users\nico_\Downloads\Arqui-presentacion1\ProyectoNotas\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Personal\Documents\GitHub\Arqui-presentacion1\ProyectoNotas
+build_property.MSBuildProjectDirectory = C:\Users\nico_\Downloads\Arqui-presentacion1\ProyectoNotas
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/AccountWeb/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFdlYlxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/AccountWeb/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFdlYlxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/EstudiantesWeb/EditarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZXNXZWJcRWRpdGFyUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/EstudiantesWeb/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZXNXZWJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/InscripcionesWeb/ListarMaterias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcGNpb25lc1dlYlxMaXN0YXJNYXRlcmlhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/MateriasWeb/Agregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNXZWJcQWdyZWdhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/MateriasWeb/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNXZWJcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/MateriasWeb/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNXZWJcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/MateriasWeb/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNXZWJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nico_/Downloads/Arqui-presentacion1/ProyectoNotas/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

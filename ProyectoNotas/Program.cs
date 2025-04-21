@@ -32,6 +32,14 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
+// 🔧 Registro del servicio de sesiones
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(60); // Tiempo de expiración de la sesión
+    options.Cookie.HttpOnly = true; // Solo accesible desde el servidor
+    options.Cookie.IsEssential = true; // Esencial para la aplicación
+});
+
 var app = builder.Build();
 
 // 🔧 Middleware
@@ -50,7 +58,10 @@ app.MapControllers();
 // 🧭 Ruta para controladores con vistas (MVC)
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=EstudiantesWeb}/{action=Index}/{id?}"
+    pattern: "{controller=AccountWeb}/{action=Login}/{id?}"
 );
+
+// 🔧 Configuración de sesiones
+app.UseSession();
 
 app.Run();

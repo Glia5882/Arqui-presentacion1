@@ -9,5 +9,8 @@ namespace ProyectoNotas.DAO
         Task<Estudiante> Crear(Estudiante estudiante);
         Task Actualizar(Estudiante estudiante);
         Task Eliminar(int id);
+        Task<Estudiante?> BuscarPorCredenciales(string usuario, string contrasena);
+        Task<Estudiante?> BuscarConInscripcionesYMaterias(int id);
+
     }
 }

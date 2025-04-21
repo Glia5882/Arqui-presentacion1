@@ -1,0 +1,35 @@
+@model ProyectoNotas.Models.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Registro de Usuario";
+}
+
+<h2 style="text-align:center; margin-bottom: 20px;">@ViewData["Title"]</h2>
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Usuario</label>
+        <input asp-for="Username" name="Username" />
+        <span asp-validation-for="Username"></span>
+    </div>
+
+    <div>
+        <label>Contraseña</label>
+        <input asp-for="Password" name="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div style="margin-top: 1rem;">
+        <button type="submit">Registrarse</button>
+
+        <button type="button" 
+                onclick="window.location.href='@Url.Action("Login", "AccountWeb")'" 
+                style="margin-left: 10px;">
+            ¿Ya tienes cuenta?
+        </button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

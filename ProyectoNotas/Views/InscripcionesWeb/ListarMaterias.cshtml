@@ -1,0 +1,35 @@
+@model List<ProyectoNotas.Models.Materia>
+
+@{
+    ViewData["Title"] = "Listar Materias Disponibles";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+        <tr>
+            <th style="text-align: left; padding: 8px;">Nombre</th>
+            <th style="text-align: left; padding: 8px;">Profesor</th>
+            <th style="text-align: left; padding: 8px;">Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var materia in Model)
+        {
+            <tr>
+                <td style="padding: 8px;">@materia.Nombre</td>
+                <td style="padding: 8px;">@materia.Profesor</td>
+                <td style="padding: 8px;">
+                    <form asp-action="Inscribirse" asp-route-materiaId="@materia.Id" method="post">
+                        <button type="submit">Inscribirse</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="Index" asp-controller="EstudiantesWeb" method="get" style="margin-top: 20px;">
+    <button type="submit">Volver</button>
+</form>

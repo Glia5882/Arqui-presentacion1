@@ -1,0 +1,37 @@
+@model List<ProyectoNotas.Models.Materia>
+
+@{
+    ViewData["Title"] = "Gestión de Materias";
+}
+
+<h2>Gestión de Materias</h2>
+
+<a asp-action="Agregar" class="btn">Agregar Materia</a>
+
+<table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+    <thead>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <th style="text-align: left; padding: 8px;">Nombre</th>
+            <th style="text-align: left; padding: 8px;">Profesor</th>
+            <th style="text-align: left; padding: 8px;">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var materia in Model)
+        {
+            <tr>
+                <td style="padding: 8px;">@materia.Nombre</td>
+                <td style="padding: 8px;">@materia.Profesor</td>
+                <td style="padding: 8px;">
+                    <form asp-action="Editar" method="get" asp-route-id="@materia.Id" style="display: inline;">
+                        <button type="submit">Editar</button>
+                    </form>
+
+                    <form asp-action="Detalles" method="get" asp-route-id="@materia.Id" style="display: inline;">
+                        <button type="submit">Detalles</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

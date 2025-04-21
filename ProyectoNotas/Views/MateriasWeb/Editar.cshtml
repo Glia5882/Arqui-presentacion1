@@ -1,0 +1,39 @@
+@model ProyectoNotas.Models.Materia
+
+@{
+    ViewData["Title"] = "Editar Materia";
+}
+
+<h2>Editar Materia</h2>
+
+<form asp-action="Editar" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+
+    <div>
+        <label asp-for="Profesor"></label>
+        <input asp-for="Profesor" />
+        <span asp-validation-for="Profesor"></span>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button type="submit">Guardar Cambios</button>
+    </div>
+</form>
+
+<form asp-action="Eliminar" method="post" asp-route-id="@Model.Id" style="margin-top: 10px;">
+    <button type="submit" style="background-color: red; color: white;">Eliminar Materia</button>
+</form>
+
+<form asp-action="Index" method="get" style="margin-top: 10px;">
+    <button type="submit">Volver</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

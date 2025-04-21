@@ -9,5 +9,7 @@ namespace ProyectoNotas.DAO
         Task<Materia> Crear(Materia materia);
         Task Actualizar(Materia materia);
         Task Eliminar(int id);
+        Task<Materia?> BuscarConInscripcionesYEstudiantes(int id);
+
     }
 }
