@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "3110ecbe-db37-4945-9d95-6b8d8a2cd597",
+		"name": "Arqui Presentación1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34056224"
+	},
+	"item": [
+		{
+			"name": "Estudiante",
+			"item": [
+				{
+					"name": "Crear estudiante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"usuario\": \"Luisa Vargas\",\r\n  \"contrasena\": \"secreta123\",\r\n  \"promedioAcumulado\": 4.06,\r\n  \"inscripciones\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/estudiantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todos los estudiantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/estudiantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiener un estudiante por su ID.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/estudiantes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"estudiantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un estudiante existente.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"usuario\": \"LuisaEditada\",\r\n  \"contrasena\": \"editada123\",\r\n  \"promedioAcumulado\": 4.5,\r\n  \"inscripciones\": []\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/estudiantes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"estudiantes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un estudiante",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/estudiantes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"estudiantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Materias",
+			"item": [
+				{
+					"name": "Crear materia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Matemáticas\",\r\n  \"profesor\": \"Laura González\",\r\n  \"promedioMateria\": 3.4,\r\n  \"inscripciones\": []\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/materias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todas las materias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/materias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiene una materia por su ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/materias/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"materias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza una materia existente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"nombre\": \"Sociales\",\r\n  \"profesor\": \"Carlos Pérez\",\r\n  \"promedioMateria\": 3.6,\r\n  \"Inscripciones\": []\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/materias/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"materias",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina una materia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/materias/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"materias",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripciones",
+			"item": [
+				{
+					"name": "Crear inscripción",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estudianteId\": 2,\r\n  \"materiaId\": 4,\r\n  \"notas\": [4.0, 5.0]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/inscripciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"inscripciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas las inscripciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/inscripciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"inscripciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiene una inscripción por su ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/inscripciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"inscripciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza una inscripción",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estudianteId\": 1,\r\n  \"materiaId\": 1,\r\n  \"notas\": [4.0, 4.5]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5091/api/inscripciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"inscripciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina una inscripción",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/inscripciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"inscripciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cálculo de promedio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5091/api/Inscripciones/promedio/estudiante/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5091",
+							"path": [
+								"api",
+								"Inscripciones",
+								"promedio",
+								"estudiante",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
