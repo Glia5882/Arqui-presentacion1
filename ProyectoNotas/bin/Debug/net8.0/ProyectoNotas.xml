@@ -128,5 +128,17 @@
         <member name="M:ProyectoNotas.Migrations.Inicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:ProyectoNotas.Migrations.AjusteNotasComparer">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.AjusteNotasComparer.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.AjusteNotasComparer.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.AjusteNotasComparer.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

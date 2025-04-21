@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-lts
+    image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: notas-sql
     ports:
       - "1433:1433"
