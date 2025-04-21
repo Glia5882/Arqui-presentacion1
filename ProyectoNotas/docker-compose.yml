@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-lts
+    container_name: notas-sql
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "TuPassword123!"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    volumes:
+      - notasdb_data:/var/opt/mssql
+
+volumes:
+  notasdb_data:

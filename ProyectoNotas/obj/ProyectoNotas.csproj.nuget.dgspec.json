@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Personal\\ProyectoNotas\\ProyectoNotas.csproj": {}
+    "C:\\Users\\Personal\\Documents\\GitHub\\Arqui-presentacion1\\ProyectoNotas\\ProyectoNotas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Personal\\ProyectoNotas\\ProyectoNotas.csproj": {
+    "C:\\Users\\Personal\\Documents\\GitHub\\Arqui-presentacion1\\ProyectoNotas\\ProyectoNotas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Personal\\ProyectoNotas\\ProyectoNotas.csproj",
+        "projectUniqueName": "C:\\Users\\Personal\\Documents\\GitHub\\Arqui-presentacion1\\ProyectoNotas\\ProyectoNotas.csproj",
         "projectName": "ProyectoNotas",
-        "projectPath": "C:\\Users\\Personal\\ProyectoNotas\\ProyectoNotas.csproj",
+        "projectPath": "C:\\Users\\Personal\\Documents\\GitHub\\Arqui-presentacion1\\ProyectoNotas\\ProyectoNotas.csproj",
         "packagesPath": "C:\\Users\\Personal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Personal\\ProyectoNotas\\obj\\",
+        "outputPath": "C:\\Users\\Personal\\Documents\\GitHub\\Arqui-presentacion1\\ProyectoNotas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Personal\\AppData\\Roaming\\NuGet\\NuGet.Config"
