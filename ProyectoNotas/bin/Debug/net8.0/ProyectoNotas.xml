@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProyectoNotas</name>
+    </assembly>
+    <members>
+        <member name="T:ProyectoNotas.Controllers.EstudiantesController">
+            <summary>
+            Controlador para operaciones CRUD de estudiantes.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.EstudiantesController.GetAll">
+            <summary>
+            Obtiene todos los estudiantes registrados.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.EstudiantesController.GetById(System.Int32)">
+            <summary>
+            Obtiene un estudiante por su ID.
+            </summary>
+            <param name="id">ID del estudiante.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.EstudiantesController.Create(ProyectoNotas.Models.Estudiante)">
+            <summary>
+            Crea un nuevo estudiante.
+            </summary>
+            <param name="estudiante">Datos del estudiante a crear.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.EstudiantesController.Update(System.Int32,ProyectoNotas.Models.Estudiante)">
+            <summary>
+            Actualiza un estudiante existente.
+            </summary>
+            <param name="id">ID del estudiante.</param>
+            <param name="estudiante">Datos actualizados del estudiante.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.EstudiantesController.Delete(System.Int32)">
+            <summary>
+            Elimina un estudiante por su ID.
+            </summary>
+            <param name="id">ID del estudiante.</param>
+        </member>
+        <member name="T:ProyectoNotas.Controllers.InscripcionesController">
+            <summary>
+            Controlador para operaciones de inscripción y cálculo de promedios.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.GetAll">
+            <summary>
+            Obtiene todas las inscripciones.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.GetById(System.Int32)">
+            <summary>
+            Obtiene una inscripción por su ID.
+            </summary>
+            <param name="id">ID de la inscripción.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.Create(ProyectoNotas.Models.Inscripcion)">
+            <summary>
+            Crea una nueva inscripción.
+            </summary>
+            <param name="inscripcion">Datos de la inscripción.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.Update(System.Int32,ProyectoNotas.Models.Inscripcion)">
+            <summary>
+            Actualiza una inscripción existente.
+            </summary>
+            <param name="id">ID de la inscripción.</param>
+            <param name="inscripcion">Datos actualizados.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.Delete(System.Int32)">
+            <summary>
+            Elimina una inscripción por su ID.
+            </summary>
+            <param name="id">ID de la inscripción.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.InscripcionesController.CalcularPromedioEstudiante(System.Int32)">
+            <summary>
+            Calcula el promedio general de notas de un estudiante.
+            </summary>
+            <param name="estudianteId">ID del estudiante.</param>
+            <returns>Promedio acumulado de todas sus inscripciones.</returns>
+        </member>
+        <member name="T:ProyectoNotas.Controllers.MateriasController">
+            <summary>
+            Controlador para operaciones CRUD de materias.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.MateriasController.GetAll">
+            <summary>
+            Obtiene todas las materias.
+            </summary>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.MateriasController.GetById(System.Int32)">
+            <summary>
+            Obtiene una materia por su ID.
+            </summary>
+            <param name="id">ID de la materia.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.MateriasController.Create(ProyectoNotas.Models.Materia)">
+            <summary>
+            Crea una nueva materia.
+            </summary>
+            <param name="materia">Datos de la materia a crear.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.MateriasController.Update(System.Int32,ProyectoNotas.Models.Materia)">
+            <summary>
+            Actualiza una materia existente.
+            </summary>
+            <param name="id">ID de la materia.</param>
+            <param name="materia">Datos actualizados de la materia.</param>
+        </member>
+        <member name="M:ProyectoNotas.Controllers.MateriasController.Delete(System.Int32)">
+            <summary>
+            Elimina una materia por su ID.
+            </summary>
+            <param name="id">ID de la materia.</param>
+        </member>
+        <member name="T:ProyectoNotas.Migrations.Inicial">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.Inicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.Inicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProyectoNotas.Migrations.Inicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
